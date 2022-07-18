@@ -1,0 +1,58 @@
+#contenidologo {
+  div {
+    background-color: #ececec;
+    align-items: center;
+
+    @include extra-min-phone {
+      flex-direction: column;
+    }
+    @include super-min-phone{
+      flex-direction: column;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p:first-child {
+      width: 30%;
+      font-size: 20px;
+
+      @include tablet {
+        width: 95%;
+        padding-right: 5px;
+      }
+      @include phone {
+        width: 95%;
+        padding-right: 5px;
+      }
+      @include extra-min-phone {
+        width: 100%;
+        padding-bottom: 5px;
+        font-size: 16px;
+      }
+      @include super-min-phone {
+        width: 100%;
+        padding-bottom: 5px;
+        font-size: 16px;
+      }
+
+      strong {
+        font-size: 30px;
+        @include phone {
+          font-size: 25px;
+        }
+        @include extra-min-phone {
+          font-size: 20px;
+        }
+        @include super-min-phone {
+          font-size: 20px;
+        }
+      }
+    }
+
+    p:last-child {
+      font-size: 15px !important;
+    }
+  }
+}

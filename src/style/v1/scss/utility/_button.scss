@@ -1,0 +1,13 @@
+.boton1 {
+  border: 2px solid $bordercolortertiary;
+  background-color: transparent !important;
+  color: $textcolorquaternary;
+  transition: all ease 0.5s;
+}
+
+.boton1:hover {
+  border: 2px solid $bordercolortertiary;
+  background-color: white !important;
+  color: $textcolorsecundary !important;
+  transition: all ease 0.5s;
+}

@@ -1,0 +1,23 @@
+@import "../utility/colors";
+
+.boton1 {
+  color: $textcolorquaternary;
+  background-color: $colorfondoprimary;
+}
+
+.boton2 {
+  background-color: $colorfondotertiary;
+  font-family: $tipografia1;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 2px solid $bordercolorsecundary;
+  border-radius: 3px;
+  color: $textcolorprimary;
+  transition: all ease 0.7s;
+}
+
+.boton2:hover {
+  color: $textcolorquaternary !important;
+  background-color: $colorfondoprimary;
+  transition: all ease 0.5s;
+}

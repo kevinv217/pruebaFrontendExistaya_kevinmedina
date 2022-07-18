@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+.colorRellenolike {
+  background-color: rgba(1, 172, 164, 1) !important;
+}
+
+.colorRellenoNoLike {
+  background-color: rgba(255, 163, 0, 1) !important;
+}

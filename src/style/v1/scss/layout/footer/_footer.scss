@@ -1,0 +1,151 @@
+.lp-footer {
+  // background-color: $colorfondoquaternary;
+  border-top: 1px dashed $bordercolorquaternary;
+  div {
+    div {
+      @include phone {
+        justify-content: space-evenly;
+      }
+      @include extra-min-phone {
+        justify-content: space-evenly;
+      }
+      @include super-min-phone {
+        justify-content: space-evenly;
+      }
+
+      img {
+        @include tablet {
+          width: 180px;
+        }
+        @include phone {
+          margin: auto;
+        }
+        @include extra-min-phone {
+          margin: auto;
+        }
+        @include super-min-phone {
+          margin: auto;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        @include tablet {
+          margin: 0 !important;
+        }
+        @include phone {
+          justify-content: center;
+        }
+        @include extra-min-phone {
+          justify-content: center;
+          padding: 5px 0;
+        }
+        @include super-min-phone {
+          justify-content: center;
+          padding: 5px 0;
+        }
+
+        i {
+          padding-right: 8px;
+          color: $iconcolortertiary;
+          font-size: 20px;
+        }
+
+        span {
+          @include tablet {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .iconsocial {
+        padding: 10px 0 0 0;
+        @include extra-min-phone {
+          justify-content: center !important;
+          flex-direction: column;
+          padding: 10px 0;
+        }
+        @include super-min-phone {
+          justify-content: center !important;
+          flex-direction: column;
+          padding: 10px 0;
+        }
+
+        span {
+          font-size: 13px;
+          color: $textcolorsecundary;
+          @include tablet {
+            margin-right: 5px !important;
+          }
+          @include phone {
+            margin-right: 5px !important;
+          }
+          @include extra-min-phone {
+            margin-right: 5px !important;
+            padding: 10px 0;
+            text-align: center;
+          }
+          @include super-min-phone {
+            margin-right: 5px !important;
+            padding: 10px 0;
+            text-align: center;
+          }
+          
+        }
+      }
+
+      span {
+        font-family: $tipografia1;
+        color: $textcolorquaternary;
+      }
+    }
+
+    .lp-footerlogos {
+      justify-content: end;
+      align-items: center;
+      
+      @include tablet {
+        display: flex;
+        padding: 0;
+      }
+      @include phone {
+        justify-content: center;
+      }
+      @include extra-min-phone {
+        justify-content: center;
+        margin-top: 15px;
+      }
+      @include super-min-phone {
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      span {
+        color: $textcolorsecundary;
+      }
+    }
+
+    .copyright {
+      border-top: 1px solid gray;
+      @include tablet {
+        margin-top: 20px !important;
+      }
+
+      p {
+        color: #cecece;
+        font-family: Arial, Helvetica, sans-serif;
+        @include tablet {
+          font-size: 15px;
+        }
+        @include extra-min-phone {
+          font-size: 15px;
+        }
+        @include super-min-phone {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

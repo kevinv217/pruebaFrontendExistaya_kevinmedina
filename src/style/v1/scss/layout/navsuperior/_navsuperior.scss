@@ -1,0 +1,286 @@
+@import "../../utility/tipografia";
+@import "../../utility/colors";
+@import "../../utility/variables";
+
+.lpNavSuperior {
+  // background-color: $colorfondotertiary;
+  z-index: 1000;
+  @include phone {
+    // width: 99%;
+    overflow-x: visible;
+  }
+  @include super-min-phone {
+    padding: 22px 0 !important;
+  }
+
+  div {
+    // width: 90% !important;
+    margin: auto;
+    padding: 0 55px;
+    align-items: center;
+    @include desktop {
+      padding: 0 10px;
+    }
+    @include tablet {
+      padding: 0 10px;
+    }
+    @include phone {
+      justify-content: space-between;
+      width: 98% !important;
+      padding: 0;
+    }
+    @include extra-min-phone {
+      justify-content: space-between;
+      width: 95% !important;
+      padding: 0;
+    }
+    @include super-min-phone {
+      justify-content: space-evenly;
+      width: 95% !important;
+      padding: 0;
+    }
+
+    a {
+      @include phone {
+        width: 30%;
+      }
+      @include extra-min-phone {
+        width: 60%;
+      }
+      @include super-min-phone {
+        width: 75%;
+      }
+
+      img {
+        @include tablet {
+          width: 115px !important;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      border: 1px solid gray;
+      // color: white;
+      background-color: rgba(255, 255, 255, 0.9);
+      @include super-min-phone {
+        padding: 10px;
+      }
+      @include extra-min-phone {
+        padding: 10px;
+      }
+      @include phone {
+        padding: 10px;
+      }
+    }
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 2px $bordercolorprimary;
+      border: none;
+    }
+
+    div {
+      padding: 0;
+      @include tablet {
+        justify-content: center;
+      }
+
+      div {
+        @include phone {
+          // width: 40% !important;
+          float: right;
+          margin: 0;
+        }
+        @include extra-min-phone {
+          margin: 0;
+          float: right;
+          width: 100% !important;
+        }
+        @include super-min-phone {
+          width: 100% !important;
+          margin: 0;
+        }
+
+        .lp-item-nav1 {
+          align-items: center;
+          @include super-min-phone {
+            text-align: center;
+            padding: 0;
+          }
+
+          @include extra-min-phone {
+            text-align: center;
+          }
+          @include phone {
+            justify-content: end;
+            padding: 0;
+          }
+
+          div {
+            ul {
+              list-style: none;
+              @include super-min-phone {
+                padding: 0;
+                margin: 0 !important;
+              }
+              @include extra-min-phone {
+                padding: 0;
+              }
+              @include phone {
+                padding: 0;
+                text-align: center;
+                margin: 0 !important;
+              }
+              @include tablet {
+                justify-content: space-evenly;
+                width: 100%;
+                padding: 0;
+              }
+
+              li {
+                @include desktop {
+                  margin-right: 2rem !important;
+                }
+                @include tablet {
+                  margin-right: 2rem !important;
+                }
+                @include phone {
+                  text-align: center;
+                  padding: 5px 0;
+                  margin-right: 0 !important;
+                }
+                @include extra-min-phone {
+                  padding: 5px 0;
+                  margin-right: 0 !important;
+                }
+                @include super-min-phone {
+                  padding: 5px 0;
+                  margin-right: 0 !important;
+                }
+
+                a {
+                  text-decoration: none;
+                  color: $textcolorquaternary;
+                  font-family: $tipografia1;
+                }
+              }
+            }
+          }
+        }
+
+        .lp-item-nav2 {
+          justify-content: end;
+          align-items: center;
+          @include super-min-phone {
+            flex-direction: column;
+            padding: 0 !important;
+          }
+          @include extra-min-phone {
+            flex-direction: column;
+            padding: 0;
+          }
+          @include phone {
+            flex-direction: column;
+            padding: 0;
+          }
+          @include tablet {
+            padding: 0;
+          }
+
+          a:first-child {
+            @include tablet {
+              width: 55%;
+              justify-content: center;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            font-family: $tipografia2;
+            margin: 0 10px !important;
+            @include desktop {
+              margin: 0 5px !important;
+            }
+            @include tablet {
+              margin: 0 !important;
+              width: 50%;
+              margin: 0 !important;
+            }
+            @include phone {
+              justify-content: center;
+              width: 60%;
+              padding: 5px 0;
+            }
+            @include extra-min-phone {
+              justify-content: center;
+              width: 85%;
+              padding: 5px 0;
+              margin: 0 !important;
+            }
+            @include super-min-phone {
+              justify-content: center;
+              margin: 0 !important;
+              padding: 5px 0;
+              width: 100%;
+            }
+
+            i {
+              color: $iconcolorprimary;
+            }
+
+            span {
+              @include tablet {
+                font-size: 15px;
+              }
+            }
+
+            button {
+              @include super-min-phone {
+                padding: 5px !important;
+                font-size: 14px;
+              }
+              @include extra-min-phone {
+                padding: 5px !important;
+                font-size: 15px;
+              }
+              @include tablet {
+                margin: 0 !important;
+                padding: 0 5px !important;
+                font-size: 15px;
+              }
+              @include desktop {
+                padding: 10px !important;
+                font-size: 15px;
+              }
+            }
+          }
+
+          a:first-child {
+            color: $textcolortertiary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lp-bg1 {
+  background-color: transparent;
+  @include phone {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  @include extra-min-phone {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  @include super-min-phone {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.lp-bg2 {
+  background-color: white;
+  box-shadow: 0 0 10px 3px $colorfondocinco;
+  .nav-item {
+    a {
+      color: $textcolorsecundary !important;
+    }
+  }
+}

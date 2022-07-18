@@ -1,0 +1,196 @@
+#lp-inforCaracteristicas {
+  padding: 0 0 80px 0 !important;
+  @include extra-min-phone {
+    padding: 0 0 30px 0 !important;
+  }
+
+  .row {
+    div {
+      h4 {
+        color: $textcolorsecundary !important;
+        padding: 0 25px;
+        text-align: start;
+
+        @include desktop {
+          padding: 0 50px;
+          font-size: 25px;
+        }
+        @include tablet {
+          padding: 0 30px;
+          font-size: 20px;
+        }
+        @include max-phone {
+          padding: 15px 5px !important;
+          font-size: 20px;
+        }
+        @include phone {
+          padding: 15px 5px;
+          font-size: 20px;
+        }
+        @include extra-min-phone {
+          font-size: 15px;
+          padding: 0 10px;
+        }
+        @include super-min-phone {
+          font-size: 15px;
+          padding: 0 10px;
+        }
+        span {
+          color: $textcolorprimary;
+        }
+      }
+    }
+
+    ul {
+      flex-wrap: wrap;
+      list-style: none;
+
+      .lp-contenido {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex: 1 40%;
+        position: relative;
+        height: auto;
+        height: 35rem;
+        text-align: start;
+        list-style: none;
+        transition: all ease 0.5s;
+
+        @include desktop {
+          width: 35%;
+          padding: 0 !important;
+        }
+        @include tablet {
+          width: 40%;
+          padding: 0px !important;
+        }
+        @include phone {
+          width: 80%;
+          padding: 0 !important;
+          margin: 10px !important;
+          flex: 1 60%;
+        }
+        @include extra-min-phone {
+          width: 90%;
+          padding: 0 !important;
+          margin: 10px !important;
+          flex: 1 60%;
+        }
+        @include super-min-phone {
+          width: 90%;
+          padding: 5px !important;
+          margin: 10px !important;
+          flex: 1 60%;
+        }
+
+        .tarjetaInformation {
+          position: absolute;
+          bottom: 0;
+
+          p {
+            padding: 0 2rem;
+            color: $textcolorquaternary !important;
+            @include phone {
+              padding: 10px !important;
+            }
+            @include extra-min-phone {
+              padding: 10px !important;
+            }
+            @include super-min-phone {
+              padding: 10px !important;
+            }
+          }
+
+          h4 {
+            width: 100%;
+            margin: auto;
+            color: $textcolorquaternary !important;
+            text-transform: capitalize;
+
+            @include phone {
+              padding: 0px !important;
+            }
+
+            @include extra-min-phone {
+              padding: 0 !important;
+              font-size: 18px;
+            }
+            @include super-min-phone {
+              padding: 0 !important;
+            }
+
+            i {
+              background-color: rgba(1, 172, 164, 1);
+              padding: 5px;
+              font-size: 20px;
+            }
+          }
+
+          .contenidoDetalle {
+            padding: 0 2rem;
+            line-height: 20px;
+
+            @include phone {
+              padding: 10px !important;
+            }
+            @include extra-min-phone{
+              padding: 10px !important;
+            }
+            @include super-min-phone {
+              padding: 10px !important;
+            }
+
+            button {
+              @include tablet {
+                padding: 10px !important;
+              }
+              @include phone {
+                padding: 10px 20px !important;
+              }
+              @include extra-min-phone {
+                padding: 10px !important;
+              }
+              @include super-min-phone {
+                padding: 5px !important;
+              }
+            }
+
+            span {
+              color: $textcolorquaternary;
+              font-size: 20px;
+              text-align: end;
+            }
+          }
+
+          div:last-child {
+            width: 100%;
+            span {
+              width: 50%;
+              padding: 1rem;
+              font-size: 25px;
+              color: $textcolorquaternary;
+            }
+
+            span:first-child {
+              background-color: rgba(1, 172, 164, 0.7);
+              text-align: start;
+            }
+
+            span:last-child {
+              background-color: rgba(255, 163, 0, 0.7);
+              text-align: end;
+            }
+          }
+        }
+      }
+
+      .lp-contenido:hover {
+        box-shadow: 0px 6px 10px 3px $colorfondocinco;
+        transition: all ease 0.5s;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@mixin lpFontLoad($name, $file, $weight, $style) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("/src/fonts/#{$file}.woff") format("woff"),
+      url("/src/fonts/#{$file}.ttf") format("truetype"),
+      url("/src/fonts/#{$file}.svg##{$name}") format("svg");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include lpFontLoad(Graphik-Bold, Graphik-Bold, normal, normal);
+@include lpFontLoad(Graphik-Regular, Graphik-Regular, normal, normal);
+@include lpFontLoad(BebasKai, BebasKai, normal, normal);
+
+$tipografia1: "Graphik-Bold";
+$tipografia2: "BebasKai";
+$tipografia3: "Graphik-Regular";

@@ -1,0 +1,93 @@
+h1 {
+  color: $textcolorprimary;
+  font-family: $tipografia1;
+  font-size: 54px;
+  @include desktop {
+    font-size: 40px;
+  }
+  @include tablet {
+    font-size: 40px !important;
+  }
+}
+
+h2 {
+  color: $textcolorquaternary;
+  font-family: $tipografia1;
+  font-size: 40px;
+}
+
+h3 {
+  color: $textcolorsecundary;
+  font-family: $tipografia1;
+  font-size: 35px;
+}
+
+h4 {
+  color: $textcolorsecundary;
+  font-family: $tipografia1;
+  font-size: 30px;
+}
+
+h5 {
+  color: $textcolortertiary;
+  font-family: $tipografia2;
+  font-size: 24px;
+  @include desktop {
+    font-size: 22px;
+  }
+  @include tablet {
+    font-size: 17px;
+  }
+  @include phone {
+    font-size: 15px;
+  }
+  @include extra-min-phone {
+    font-size: 15px;
+  }
+  @include super-min-phone {
+    font-size: 15px;
+  }
+}
+
+h6 {
+  color: $textcolorsecundary;
+  font-family: $tipografia1;
+  font-size: 20px;
+}
+
+label {
+  font-family: $tipografia1;
+  color: $textcolortertiary;
+}
+
+p {
+  color: #505050;
+  font-size: 18px;
+  font-family: $tipografia3;
+}
+
+.inputform {
+  background-color: #ebebeb !important;
+  // font-family: $tipografia1;
+  font-weight: 500 !important;
+  border: 0 !important;
+  padding: 15px 15px !important;
+}
+
+input::placeholder {
+  color: #acacac !important;
+}
+
+select {
+  background-color: #ebebeb !important;
+  // font-family: $tipografia1;
+  font-weight: 500 !important;
+  border: 0 !important;
+  padding: 15px 15px !important;
+  color: $textcolorsecundary !important;
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 16l-6-6h12z'/%3E%3C/svg%3E");
+  background-size: auto;
+}

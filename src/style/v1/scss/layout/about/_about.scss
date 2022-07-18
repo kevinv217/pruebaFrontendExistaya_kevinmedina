@@ -1,0 +1,189 @@
+#lp-inicio {
+  position: relative;
+  background-color: #f5f5f5;
+  background-image: url(https://res.cloudinary.com/dtguzyae4/image/upload/v1657930310/pxfuel.com_szhesq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 50rem;
+
+  .row > .tarjetaFondo {
+    position: relative;
+    height: 47rem;
+
+    div {
+      .tarjeta1,
+      .tarjeta2 {
+        position: absolute;
+        top: 120px;
+        left: 4rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: auto;
+        width: 45%;
+        text-align: start;
+
+        @include tablet {
+          width: 80%;
+        }
+        @include phone {
+          width: 90%;
+          left: 2rem;
+        }
+        @include extra-min-phone {
+          left: 1rem;
+          width: 90%;
+        }
+        @include super-min-phone {
+          left: 1rem;
+          width: 90%;
+        }
+      }
+
+      .tarjeta1 {
+        span,
+        h1,
+        p,
+        a,
+        h5 {
+          padding-left: 2rem;
+          color: $textcolorquaternary;
+          width: 75%;
+
+          @include extra-min-phone {
+            padding-left: 1rem;
+            width: 100%;
+          }
+          @include super-min-phone {
+            padding-left: 1rem;
+            width: 100%;
+          }
+        }
+
+        a {
+          img {
+            width: 25px;
+          }
+        }
+
+        .barraLike {
+          width: 100%;
+
+          button {
+            width: 50%;
+            color: $colorfondotertiary;
+            border: none;
+            i {
+              font-size: 40px;
+            }
+          }
+
+          button:first-child {
+            background-color: #01aca4;
+          }
+
+          button:last-child {
+            background-color: #ffa300;
+          }
+        }
+      }
+
+      .tarjeta2 {
+        h2,
+        p,
+        div,
+        div > h3,
+        button {
+          margin-left: 2rem;
+          color: $textcolorquaternary;
+          // width: 75%;
+          @include extra-min-phone {
+            margin-left: 5px;
+            font-size: 20px;
+            width: 100%;
+          }
+          @include super-min-phone {
+            margin-left: 5px;
+            font-size: 20px;
+            width: 100%;
+          }
+        }
+
+        div > i {
+          font-size: 50px;
+          padding: 5px 10px;
+        }
+
+        h2 {
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .cantidadLike {
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 10%;
+
+      section {
+        padding: 16px 20px;
+        @include tablet {
+          padding: 23px 20px;
+        }
+        @include phone {
+          padding: 24px 10px;
+        }
+        @include extra-min-phone {
+          padding: 25px 10px;
+        }
+        @include super-min-phone {
+          padding: 25px 10px;
+        }
+
+        span {
+          font-size: 25px;
+          color: $textcolorquaternary;
+          font-family: $tipografia3;
+          @include tablet {
+            font-size: 18px;
+          }
+          @include phone {
+            font-size: 16px;
+          }
+          @include extra-min-phone {
+            font-size: 14px;
+          }
+          @include super-min-phone {
+            font-size: 14px;
+          }
+        }
+      }
+
+      section:first-child {
+        width: 50%;
+        @include extra-min-phone {
+          width: 50% !important;
+        }
+      }
+
+      section:last-child {
+        width: 50%;
+        @include extra-min-phone {
+          width: 50% !important;
+        }
+      }
+
+      section:first-child {
+        background-color: rgba(1, 172, 164, 0.7);
+        text-align: end;
+      }
+
+      section:last-child {
+        background-color: rgba(255, 163, 0, 0.7);
+        text-align: start;
+      }
+    }
+  }
+}

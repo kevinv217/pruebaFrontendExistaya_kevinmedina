@@ -1,0 +1,17 @@
+//layout del sitio
+@import "./layout/navsuperior/navsuperior";
+@import "./layout/about/about";
+@import "./layout/contenidoLogo/contenidoLogo";
+@import "./layout/inforCaracteristicas/inforcaracteristicas";
+@import "./layout/footer/footer";
+
+//componentes generales
+@import "./component/botones";
+@import "./component/general";
+
+//utilidades
+@import "./utility/tipografia";
+@import "./utility/body";
+@import "./utility/colors";
+@import "./utility/design_responsive";
+@import './utility/button';
